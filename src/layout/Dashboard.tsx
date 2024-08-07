@@ -2,14 +2,13 @@ import Chart from "../components/dashboard/Chart";
 import FeedbackCard from "../components/dashboard/FeedbackCard";
 import KpiCards from "../components/dashboard/KpiCards";
 import MenuCard from "../components/dashboard/MenuCard";
-import NetProfit from "../components/dashboard/NetProfit";
 import NetProfitCard from "../components/dashboard/NetProfitCard";
 import RecentOrders from "../components/dashboard/RecentOrders";
 
 const Dashboard = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full bg-black">
           <div>Dashboard</div>
         <div className="grid w-full min-h-screen">
           <div className="flex w-full gap-10">

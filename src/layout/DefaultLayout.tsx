@@ -14,7 +14,7 @@ const DefaultLayout = () => {
           {/* // navbar or Header */}
           <Header />
           {/* //main content */}
-          <main className="mt-10 w-full">
+          <main className="mt-10 w-full bg-black">
             <div className="p-4 py-10 px-5">
               <Dashboard/>
             </div>

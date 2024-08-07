@@ -1,26 +1,16 @@
+import { BiSolidWidget } from "react-icons/bi";
+import { MdOutlineShoppingBag } from "react-icons/md";
+import { MdOutlineAccountBalanceWallet } from "react-icons/md";
+
 const Sidebar = () => {
   return (
     <div className="bg-gray-800  p-4 space-x-2 items-center fixed h-full top-0 z-10">
       {/* Main Logo */}
-      <div className="self-start">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          className="size-8 text-white"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636"
-          />
-        </svg>
+      <div className="self-start text-blue-500">
+        <BiSolidWidget className="text-[40px]" />
       </div>
 
       {/* sidebar logos */}
-
       <div className="space-y-2 mt-10">
         <div>
           <svg
@@ -29,7 +19,7 @@ const Sidebar = () => {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="size-6 text-white"
+            className="size-6 text-white my-3"
           >
             <path
               stroke-linecap="round"
@@ -46,7 +36,7 @@ const Sidebar = () => {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="size-6 text-white"
+            className="size-6 text-white my-3"
           >
             <path
               stroke-linecap="round"
@@ -63,7 +53,7 @@ const Sidebar = () => {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="size-6 text-white"
+            className="size-6 text-white my-3"
           >
             <path
               stroke-linecap="round"
@@ -73,36 +63,10 @@ const Sidebar = () => {
           </svg>
         </div>
         <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            className="size-6 text-white"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"
-            />
-          </svg>
+        <MdOutlineAccountBalanceWallet  className="fill-current text-white size-7 text-white my-3 "/>
         </div>
         <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            className="size-6 text-white"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"
-            />
-          </svg>
+        <MdOutlineShoppingBag   className="fill-current text-white size-7 text-white my-3 "/>
         </div>
       </div>
       <div className="absolute bottom-0 mb-10">

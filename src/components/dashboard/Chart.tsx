@@ -52,8 +52,8 @@ const Chart = () => {
   };
 
   return (
-    <div className="bg-gray-900 p-4 mt-5 max-h-fit rounded-lg w-full">
-      <Bar data={data} options={options} style={{width: "100%", height: "70%"}} />
+    <div className="bg-gray-900 p-4 mt-5 rounded-lg w-full" style={{ height: '300px' }}>
+      <Bar data={data} options={options} />
     </div>
   );
 };

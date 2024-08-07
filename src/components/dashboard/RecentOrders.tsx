@@ -1,4 +1,3 @@
-import React from "react";
 
 interface Order {
   customer: string;
@@ -15,6 +14,7 @@ const userSVG = (
     />
   </svg>
 );
+
 const orders: Order[] = [
   {
     customer: "Wade Warren",
@@ -55,26 +55,26 @@ const RecentOrders = () => {
       <table className="w-full border-collapse">
         <thead>
           <tr>
-            <th className="text-left text-white p-2 border-b">Customer</th>
-            <th className="text-left text-white p-2 border-b">Order No.</th>
-            <th className="text-left text-white p-2 border-b">Amount</th>
-            <th className="text-left text-white p-2 border-b">Status</th>
+            <th className="text-left text-white p-4 border-b">Customer</th>
+            <th className="text-left text-white p-4 border-b">Order No.</th>
+            <th className="text-left text-white p-4 border-b">Amount</th>
+            <th className="text-left text-white p-4 border-b">Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="space-y-2">
           {orders.map((order) => (
             <tr key={order.orderNo}>
-              <td className="text-white p-2 border-b flex gap-1">
+              <td className="text-white p-4 border-b flex gap-2 items-center">
                 <div>{userSVG}</div>
                 <div>{order.customer}</div>
               </td>
-              <td className="text-white p-2 border-b">{order.orderNo}</td>
-              <td className="text-white p-2 border-b">
+              <td className="text-white p-4 border-b">{order.orderNo}</td>
+              <td className="text-white p-4 border-b">
                 ${order.amount.toFixed(2)}
               </td>
-              <td className="p-2 border-b">
+              <td className="p-4 border-b">
                 <span
-                  className={`rounded px-2 py-1 ${
+                  className={`rounded px-4 py-2 ${
                     order.status === "Delivered"
                       ? "text-green-500 bg-green-100"
                       : order.status === "Cancelled"

@@ -11,9 +11,8 @@ type MenuItemProps = {
 };
 
 const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
-  const Icon = item.icon;
   return (
-    <div className="flex items-center justify-between bg-gray-800 p-4 mb-2 rounded-lg">
+    <div className="flex items-center justify-between bg-gray-800 p-4 mb-2 rounded-lg my-6">
       <div className="flex items-center">
         <div className={`p-2 rounded-full ${item.iconBgColor}`}>
           {/* <Icon className="text-white" /> */}
