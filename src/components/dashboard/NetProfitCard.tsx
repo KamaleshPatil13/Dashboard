@@ -1,4 +1,3 @@
-import React from 'react'
 import NetProfit from './NetProfit'
 
 const NetProfitCard = () => {

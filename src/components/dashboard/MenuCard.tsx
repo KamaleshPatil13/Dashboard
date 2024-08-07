@@ -1,12 +1,5 @@
-import React from "react";
 import { FaBullseye, FaHamburger, FaUtensils } from "react-icons/fa";
 import MenuItem from "./Menu";
-
-type Item = {
-  label: string;
-  icon: React.ComponentType;
-  iconBgColor: string;
-};
 
 const items = [
   {
