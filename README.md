@@ -8,7 +8,6 @@ A modern and responsive dashboard built with React.js, TypeScript, and Tailwind 
 - **TypeScript:** Adds type safety to JavaScript, improving code quality and maintainability.
 - **Tailwind CSS:** A utility-first CSS framework for creating custom designs quickly.
 - **Charts:** Interactive and responsive charts for data visualization.
-- **GitHub Pages Deployment:** Easily deploy your application using GitHub Pages.
 
 ## Getting Started
 
